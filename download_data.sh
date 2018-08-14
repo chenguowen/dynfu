@@ -1,5 +1,9 @@
 #!/bin/sh
 
+
+https://cloud9.cs.fau.de/index.php/s/46qcNZSNePHx08A  
+
+下面网址已经失效 
 wget http://lgdv.cs.fau.de/uploads/publications/data/innmann2016deform/umbrella_data.zip
 mkdir -p data/umbrella/depth
 mkdir -p data/umbrella/color
