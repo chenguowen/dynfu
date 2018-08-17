@@ -60,7 +60,13 @@ Exception
 
 
 
+#　自己制作镜像的几种方法　　https://jingyan.baidu.com/article/948f5924151366d80ff5f9dc.html
 
+
+＃　拟牛顿法　Ｌ－ＢＦＧＳ　
+https://blog.csdn.net/henryczj/article/details/41542049
+https://blog.csdn.net/lishuandao/article/details/51027445
+https://blog.csdn.net/itplus/article/details/21897443
 
 Dynfu
 ============
