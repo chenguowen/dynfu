@@ -1,3 +1,13 @@
+目前几个问题： 
+# 在dynfu提供的docker环境中，需要安装Terra和Opt，本来自己编译，结果出错了。
+编译 clang/AST/ASTConsumer.h: No such file or directory
+
+# 后来发现原来是个简单的问题
+自己更改一下cmakelist的路径就可以找到Opt，都是$ CMAKE_DIR惹的祸，但是又出现了找不到pcl的问题
+
+
+
+
 Dynfu
 ============
 Dependencies:
