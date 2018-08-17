@@ -54,6 +54,11 @@ OpenCV Error: Unspecified error (The function is not implemented. Rebuild the li
 Exception
 # 最新dynfu出现了Opencv的错误，可能是OpenCV没有编译好 
 查看 OpenCV版本  pkg-config --modversion opencv 
+于是参考这个 https://github.com/BVLC/caffe/wiki/OpenCV-3.3-Installation-Guide-on-Ubuntu-16.04 重装OpenCV 
+大概半个小时安装完成吧，docker版，可惜功败垂成，出现了docker container的覆盖，如果在一个images在添加中间，又打开后关闭了另外一个镜像，则docker ps -l 就找不多本来想要commit的contaner了。 
+
+
+
 
 
 
