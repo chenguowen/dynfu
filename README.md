@@ -10,22 +10,32 @@
 
 # 在docker dynfu core上面弄出来了，基本上错误如下： 
 ----------------------+----------+-----------+----------
+ 
  PCGStep2_1stHalf_D   |     42   |   25.324ms|  0.6029ms
 ----------------------+----------+-----------+----------
- computeAdelta_D      |     42   |    0.641ms|  0.0153ms
+
+computeAdelta_D      |     42   |    0.641ms|  0.0153ms
 ----------------------+----------+-----------+----------
+ 
  computeAdelta_Graph_DataG |     42   |  845.008ms| 20.1192ms
 ----------------------+----------+-----------+----------
- PCGStep2_2ndHalf_D   |     42   |    1.060ms|  0.0252ms
+
+PCGStep2_2ndHalf_D   |     42   |    1.060ms|  0.0252ms
 ----------------------+----------+-----------+----------
- computeModelCost_D   |      5   |    2.951ms|  0.5901ms
+
+computeModelCost_D   |      5   |    2.951ms|  0.5901ms
 ----------------------+----------+-----------+----------
- computeModelCost_Graph_DataG |      5   |    1.719ms|  0.3439ms
+
+computeModelCost_Graph_DataG |      5   |    1.719ms|  0.3439ms
 ----------------------+----------+-----------+----------
- savePreviousUnknowns_D |      5   |    2.981ms|  0.5963ms
+
+savePreviousUnknowns_D |      5   |    2.981ms|  0.5963ms
 ----------------------+----------+-----------+----------
- PCGLinearUpdate_D    |      5   |    0.083ms|  0.0166ms
---------------------------------------------------------
+
+PCGLinearUpdate_D    |      5   |    0.083ms|  0.0166ms
+-------------------------------------------------------- 
+
+
 TIMING 9917.745117 3.083552 103.023270 0.098784 107.167290 8452.522461
 Per-iter times ms (nonlinear,linear): 216.6490  8566.6729
 ===Robust Mesh Deformation===
@@ -34,7 +44,9 @@ Opt GN,Opt LM,CERES
 ,2.10535324096679687500e+02,
 OpenCV Error: Unspecified error (The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Carbon support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script) in cvWaitKey, file /opencv-3.2.0/modules/highgui/src/window.cpp, line 654
 Exception
-出现了Opencv的错误，可能是OpenCV没有编译好
+# 最新dynfu出现了Opencv的错误，可能是OpenCV没有编译好 
+查看 OpenCV版本  pkg-config --modversion opencv 
+
 
 
 Dynfu
