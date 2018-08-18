@@ -68,6 +68,16 @@ https://blog.csdn.net/henryczj/article/details/41542049
 https://blog.csdn.net/lishuandao/article/details/51027445
 https://blog.csdn.net/itplus/article/details/21897443
 
+终于生成了对应的docker： 
+
+但是如果需要可视化就会产生如下的错误 ： 
+
+root@6e3cc0208db0:/DynamicFusionCore/build# ./bin/dynamicfusion  /data/DynamicFusion2-M/dynamicfusion-1/data/   --enable-viz
+ERROR: In /build/vtk-NWL3SN/vtk-5.10.1+dfsg/Rendering/vtkXOpenGLRenderWindow.cxx, line 1496
+vtkXOpenGLRenderWindow (0x5462090): bad X server connection. DISPLAY=Segmentation fault (core dumped)
+不知道是不是
+
+
 Dynfu
 ============
 Dependencies:
